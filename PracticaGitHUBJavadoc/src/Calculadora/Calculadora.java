@@ -26,17 +26,28 @@ public class Calculadora {
 		return op1/op2;
 	}
 	
-	//TODO: Añadir la operación potencia, que devuelve
+	//TODO: Aï¿½adir la operaciï¿½n potencia, que devuelve
 	//op1 elevado a op2 con las siguientes reglas: 
-	//-Por convenio cualquier número elevado a 0 es igual a 1.
-	//-Un número "n" elevado a una potencia negativa "-p" es igual a 1/(n^p)
-	//Así 232^0 = 1; y 2^(-3)=1/2^3=1/8
+	//-Por convenio cualquier nï¿½mero elevado a 0 es igual a 1.
+	//-Un nï¿½mero "n" elevado a una potencia negativa "-p" es igual a 1/(n^p)
+	//Asï¿½ 232^0 = 1; y 2^(-3)=1/2^3=1/8
 	
-	
-	//TODO: Añadir la operacion toString que devuelva los operandos
+	double potencia() {
+		
+		return Math.pow(op1, op2);
+	}
+
+	//TODO: Aï¿½adir la operacion toString que devuelva los operandos
 	//la cadena:
 	//"Calculadora de <vuestroNombre>: "
 	//"operando1 = <op1>"
 	//"operando2 = <op2>"
+	
+	@Override
+	public String toString() {
+		return "Calculadora de Francisco Algaba:\n"
+				+ "operando1 = " + op1 
+				+ "\noperando2 = " + op2;
+	}
 	
 }
