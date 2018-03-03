@@ -30,14 +30,14 @@ public class Calculadora {
 	/**
 	 * @return devuelve el resultado de sumar op1 + op2
 	 */
-	double suma() {
+	public double suma() {
 		return op1+op2;
 	}
 	
 	/**
 	 * @return devuelve el resultado de restar op1 - op2
 	 */
-	double resta() {
+	public double resta() {
 		return op1-op2;
 	}
 	
@@ -45,7 +45,7 @@ public class Calculadora {
 	 * @return devuelve el resultado de dividir op1 / op2
 	 * @throws IllegalArgumentException si op2 = 0
 	 */
-	double division() {
+	public double division() {
 		if(op2==0) {
 			throw new IllegalArgumentException("El divisor es 0");
 		}
@@ -61,7 +61,7 @@ public class Calculadora {
 	/**
 	 * @return devuelve el resultado de elevar op1 a op2.
 	 */
-	double potencia() {
+	public double potencia() {
 		
 		return Math.pow(op1, op2);
 	}
